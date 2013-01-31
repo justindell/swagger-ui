@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/swagger/version.rb",
     "public/javascripts/swagger.js",
     "public/stylesheets/swagger.css",
+    "swagger-ui.gemspec",
     "swagger.gemspec"
   ]
   s.homepage = "http://github.com/justindell/swagger"
