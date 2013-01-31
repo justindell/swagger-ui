@@ -1,0 +1,35 @@
+%html
+  %head
+    %link{ :href => '/stylesheets/swagger.css', :media => 'screen', :rel => 'stylesheet', :type => 'text/css' }
+    %script{ :src => '/javascripts/swagger.js', :type => 'text/javascript'}
+
+  %body 
+    %div#message-bar.swagger-ui-wrap
+    %div#swagger-ui-container.swagger-ui-wrap
+
+    %script
+      ! $(function () {
+      !     window.swaggerUi = new SwaggerUi({
+      !         discoveryUrl:"http://localhost:3000/api/docs",
+      !         apiKey:"",
+      !         dom_id:"swagger-ui-container",
+      !         supportHeaderParams: false,
+      !         supportedSubmitMethods: ['get', 'post'],
+      !         onComplete: function(swaggerApi, swaggerUi){
+      !         	if(console) {
+      !                 console.log("Loaded SwaggerUI")
+      !                 console.log(swaggerApi);
+      !                 console.log(swaggerUi);
+      !             }
+      !           $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+      !         },
+      !         onFailure: function(data) {
+      !         	if(console) {
+      !                 console.log("Unable to Load SwaggerUI");
+      !                 console.log(data);
+      !             }
+      !         },
+      !         docExpansion: "none"
+      !     });
+      !     window.swaggerUi.load();
+      ! });
