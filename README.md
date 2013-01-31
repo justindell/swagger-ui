@@ -6,15 +6,11 @@ Rails wrapper for the [Swagger-UI](https://github.com/wordnik/swagger-ui, 'Swagg
 
 Add this line to your application's Gemfile:
 
-    gem 'swagger'
+    gem 'swagger-ui', :require => 'swagger'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install swagger
 
 Then run the generator:
 
