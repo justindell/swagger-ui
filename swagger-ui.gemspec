@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Dell", "Brian Tatnall"]
-  s.date = "2013-01-31"
+  s.date = "2013-02-04"
   s.description = "Swagger UI wrapper"
   s.email = "dell.justin@gmail.com"
   s.extra_rdoc_files = [
