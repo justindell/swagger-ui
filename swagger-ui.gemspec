@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "swagger-ui"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Dell", "Brian Tatnall"]
-  s.date = "2013-02-04"
+  s.date = "2014-02-14"
   s.description = "Swagger UI wrapper"
   s.email = "dell.justin@gmail.com"
   s.extra_rdoc_files = [
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/justindell/swagger"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.25"
+  s.rubygems_version = "1.8.23"
   s.summary = "Swagger UI"
 
   if s.respond_to? :specification_version then
