@@ -12,7 +12,7 @@ module Swagger
     end
 
     def operations http_methods, opts = {}
-      operations = http_methods.map { |m| Operation.new self, m, opts }
+      operations = Array(http_methods).map { |m| Operation.new self, m, opts }
       operations.each { |o| yield(o) }
       @values[:operations].concat operations
     end
